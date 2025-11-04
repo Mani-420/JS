@@ -1,0 +1,208 @@
+═══════════════════════════════════════════════════════════════════════════════
+                    LECTURE 1: INTRODUCTION TO JAVASCRIPT & SETUP
+═══════════════════════════════════════════════════════════════════════════════
+
+───────────────────────────────────────────────────────────────────────────────
+📖 SECTION 1: WHAT IS JAVASCRIPT AND WHY LEARN IT?
+───────────────────────────────────────────────────────────────────────────────
+
+KEY POINTS:
+• JavaScript (JS) = programming language that makes web pages interactive
+• Created in 1995 by Brendan Eich
+• HTML = Structure, CSS = Style, JavaScript = Behavior
+• Runs everywhere: browsers, servers (Node.js), mobile, desktop, IoT
+
+KEY CHARACTERISTICS:
+• Interpreted language (executed line by line, no compilation needed)
+• Dynamic typing (types determined automatically)
+• Supports multiple programming paradigms (object-oriented, functional)
+• Versatile and runs on multiple platforms
+
+WHY LEARN JAVASCRIPT:
+✓ High demand in job market
+✓ Easy to start (just browser + text editor)
+✓ Versatile (build websites, apps, games, servers)
+✓ Large supportive community
+✓ Constantly evolving with new features
+
+───────────────────────────────────────────────────────────────────────────────
+🛠️  SECTION 2: SETTING UP YOUR DEVELOPMENT ENVIRONMENT
+───────────────────────────────────────────────────────────────────────────────
+
+REQUIRED TOOLS:
+
+1. TEXT EDITOR / IDE
+   • VS Code (RECOMMENDED) - https://code.visualstudio.com/
+     - Free, lightweight, beginner-friendly
+     - Syntax highlighting, code completion, built-in terminal
+   • Alternatives: Sublime Text, Atom, WebStorm, Notepad++
+
+2. WEB BROWSER
+   • Google Chrome (recommended - excellent dev tools)
+   • Mozilla Firefox (great dev tools)
+   • Microsoft Edge (built on Chrome)
+
+3. NODE.JS (Optional but Recommended)
+   • Download LTS version from: https://nodejs.org/
+   • Verify installation: Open terminal → type `node --version`
+   • Why needed: Run JS outside browser, use npm for packages
+
+───────────────────────────────────────────────────────────────────────────────
+▶️  SECTION 3: RUNNING JAVASCRIPT
+───────────────────────────────────────────────────────────────────────────────
+
+THREE METHODS TO RUN JAVASCRIPT:
+
+METHOD 1: BROWSER CONSOLE
+──────────────────────────
+Steps:
+1. Open browser (Chrome/Firefox/Edge)
+2. Press F12 or Right-click → Inspect
+3. Click "Console" tab
+4. Type code and press Enter
+
+Example:
+  console.log("Hello, JavaScript!");
+
+Best for: Quick experiments, learning, immediate feedback
+
+METHOD 2: HTML FILE WITH SCRIPT TAG
+────────────────────────────────────
+Steps:
+1. Create HTML file (e.g., index.html)
+2. Add <script> tag with JavaScript code
+3. Open file in browser
+4. Open console (F12) to see output
+
+Example:
+  <!DOCTYPE html>
+  <html>
+  <body>
+      <script>
+          console.log("Hello from HTML!");
+          alert("Welcome!");
+      </script>
+  </body>
+  </html>
+
+Or use external file:
+  <script src="script.js"></script>
+
+Best for: Web development, combining HTML and JavaScript
+
+METHOD 3: NODE.JS (Command Line)
+─────────────────────────────────
+Steps:
+1. Create .js file (e.g., hello.js)
+2. Write JavaScript code
+3. Open terminal/command prompt
+4. Navigate to file location: cd path/to/folder
+5. Run: node hello.js
+
+Example:
+  // hello.js
+  console.log("Hello from Node.js!");
+
+Best for: Server-side code, running scripts, automation
+
+WHICH METHOD WHEN?
+• Learning & Experimenting → Browser Console
+• Web Development → HTML file with script tag
+• Server-side Code → Node.js
+• Testing & Debugging → All three!
+
+───────────────────────────────────────────────────────────────────────────────
+👋 SECTION 4: YOUR FIRST "HELLO WORLD" PROGRAM
+───────────────────────────────────────────────────────────────────────────────
+
+EXERCISE 1: Browser Console
+────────────────────────────
+1. Open browser console (F12)
+2. Type: console.log("Hello, World!");
+3. Press Enter
+4. See output: Hello, World!
+
+EXERCISE 2: Node.js
+───────────────────
+1. Create hello-world.js:
+   console.log("Hello, World!");
+   console.log("I'm learning JavaScript!");
+
+2. Open terminal
+3. Navigate to folder: cd path/to/folder
+4. Run: node hello-world.js
+5. See output in terminal
+
+EXERCISE 3: HTML + JavaScript
+──────────────────────────────
+Create hello.html:
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>My First JavaScript</title>
+  </head>
+  <body>
+      <h1>Welcome!</h1>
+      <script>
+          console.log("Hello, World!");
+          alert("Hello, World! Welcome!");
+          document.body.innerHTML += "<p>Hello from JavaScript!</p>";
+      </script>
+  </body>
+  </html>
+
+Open in browser, check console (F12) for output.
+
+CODE EXPLANATION:
+──────────────────
+• console.log("text") - prints to browser/terminal console
+• alert("text") - shows popup message
+• document.body.innerHTML - modifies HTML page content
+• ; (semicolon) - marks end of statement (optional but good practice)
+
+───────────────────────────────────────────────────────────────────────────────
+💡 KEY TAKEAWAYS
+───────────────────────────────────────────────────────────────────────────────
+
+✓ JavaScript makes web pages interactive and runs everywhere
+✓ Setup: VS Code + Browser + Node.js (optional)
+✓ Three ways to run: Browser Console, HTML file, Node.js
+✓ console.log() is essential for displaying output
+✓ Start simple, practice regularly
+
+───────────────────────────────────────────────────────────────────────────────
+🎯 PRACTICE EXERCISES
+───────────────────────────────────────────────────────────────────────────────
+
+1. Multiple Messages
+   Display three different messages using console.log()
+
+2. Personal Greeting
+   Create a program that greets you by name
+
+3. Calculator Preview
+   Display results of simple math: console.log(5 + 3);
+
+4. Mix Console and Alert
+   Create HTML file with both console.log and alert()
+
+───────────────────────────────────────────────────────────────────────────────
+📚 HELPFUL RESOURCES
+───────────────────────────────────────────────────────────────────────────────
+
+• MDN Web Docs: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+• JavaScript.info: https://javascript.info/
+• VS Code Docs: https://code.visualstudio.com/docs
+• Node.js Docs: https://nodejs.org/docs/
+
+───────────────────────────────────────────────────────────────────────────────
+🚀 NEXT LECTURE PREVIEW
+───────────────────────────────────────────────────────────────────────────────
+
+Lecture 2: Variables and Data Types
+• var, let, and const - when to use each
+• Primitive data types: string, number, boolean, undefined, null
+• Type checking with typeof
+• Variable naming conventions
+
+───────────────────────────────────────────────────────────────────────────────
